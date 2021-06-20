@@ -1,0 +1,8 @@
+# Here are variables related to the Tomcat installation
+
+http_port: 8080
+https_port: 8443
+
+expose_http_port: 4567
+expose_https_port: 443
+

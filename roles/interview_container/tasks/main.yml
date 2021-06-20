@@ -1,0 +1,11 @@
+---
+- name: "Launch docker container"
+  docker_container:
+    name: demo-apache
+    image: docker.io/bitnami/apache:2.4
+    state: started
+    ports:
+    - "{{ expose_http_port }}:{{ http_port }}"
+    - "{{ expose_https_port }}:{{ https_port }}"
+    restart_retries: 5
+  register: docker_info 
