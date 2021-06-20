@@ -6,20 +6,6 @@
   remote_user: root
   become: yes
   become_method: sudo
-  pre_tasks:
-    - name: Install Python if not already present.
-      raw: test -e /usr/bin/python || (apt -y update && apt install -y python-minimal)
-      changed_when: False
-    - name: Gather facts after Python is definitely present.
-      setup:
-    - name: Install pip
-      apt:
-        name: python-pip
-        update_cache: yes
-        state: present
-    - name: Install Docker Module for Python
-      pip:
-        name: docker
   roles:
     - dependancies    
     - interview_container
