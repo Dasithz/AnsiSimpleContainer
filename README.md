@@ -27,6 +27,24 @@ Following this update, you can install the Ansible software with:
 ```sh
 sudo apt install ansible
 ```
+
+Navigate to the ```/etc/ansible/ansible.cfg ``` file and place your PEM file location which contains the private key that can use acorss the nodes to establish the SSH connection.
+
+Sample Config will like something like below
+
+```sh
+...
+# if set, always use this private key file for authentication, same as
+# if passing --private-key to ansible or ansible-playbook
+private_key_file = /home/ubuntu/new/dasitha2.pem
+
+# If set, configures the path to the Vault password file as an alternative to
+# specifying --vault-password-file on the command line.
+#vault_password_file = /path/to/vault_password_file
+...
+```
+
+
 ### Cloning the Ansible Playbook
 
 Clone the application using the below command
