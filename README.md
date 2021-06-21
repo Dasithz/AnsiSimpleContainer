@@ -1,4 +1,4 @@
-# Fruit-Basket-App
+# Cintainerzed Web Application for Ansible Beginners
 
 [![N|Solid](http://www.ansible.com/hubfs/2016_Images/Blog_Headers/Ansible-Docker-Blog-2.png)](https://nodesource.com/products/nsolid)
 
@@ -13,7 +13,7 @@ Need to have an editor tool (VIM , Nano etc..)
 ## Tested OS Version
 Ubuntu Server 18.04 LTS 
 
-Make sure to have git installed as Ansible in the controller server (Configuration Server)
+Make sure to have git installed in the Ansible controller server (Configuration Server)
 ```sh
 sudo apt-add-repository ppa:ansible/ansible
 ```
@@ -71,6 +71,9 @@ For Production environment deployment
 ```sh
 ansible-playbook -i production site.yml
 ```
+
+![Execution](https://github.com/Dasithz/AnsiSimpleContainer/blob/main/Images/PlayBook_Execution.PNG?raw=true)
+
 ### Sample Out put
 
 ![Execution](https://github.com/Dasithz/AnsiSimpleContainer/blob/main/Images/Web_OutPut.PNG?raw=true)
